@@ -1,3 +1,7 @@
+## Notes:
+- The '/watchlist' route can only be visited when dark theme is on (it is protected through middleware)
+- Live website : https://movie-app-application-rouge.vercel.app/
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
