@@ -1,0 +1,91 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+/* globals.css */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text color */
+}
+
+/* Add additional dark mode styles as needed */
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #005bb5;
+}
+
+/* Add this to your global CSS file or a specific CSS module */
+
+.search-input {
+  width: 30%; /* Full width */
+  padding: 12px 16px; /* Padding for top/bottom and left/right */
+  margin-bottom: 20px; /* Spacing below the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effects */
+  margin-right:35px;
+}
+
+/* Focus state */
+.search-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Add this to your global CSS file or a specific CSS module */
+
+.load-more {
+  display: inline-block; /* Make it an inline-block element */
+  padding: 12px 24px; /* Padding for top/bottom and left/right */
+  margin-top: 20px; /* Space above the button */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover state */
+.load-more:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Disabled state */
+.load-more:disabled {
+  background-color: #ccc; /* Gray background for disabled */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+
